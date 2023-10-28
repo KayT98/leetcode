@@ -10,7 +10,7 @@ let diagonalSum = function(mat) {
     let mid = Math.floor(nums / 2)
 
     //summation of the diagonal element
-    summation = 0
+    let summation = 0
 
     for(let i=0; i<nums; i++){
         //get the primary diagonal
@@ -27,3 +27,12 @@ let diagonalSum = function(mat) {
 
     return summation
 };
+
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+let result = diagonalSum(matrix);
+console.log("Sum of Diagonal Elements: " + result);
